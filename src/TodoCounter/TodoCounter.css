@@ -3,4 +3,10 @@
     text-align: center;
     margin: 0;
     padding: 48px;
+    color: #7b91cf;
+    transition: .8s;
+}
+
+.TodoCounter__loading {
+    opacity: 25%;
 }

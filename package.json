@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^1.0.4",
     "gh-pages": "^3.2.3"
   },
   "homepage": "https://Josefloresh94.github.io/todo-machine"
