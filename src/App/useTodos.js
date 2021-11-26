@@ -3,9 +3,10 @@ import { useLocalStorage } from './useLocalStorage'
 
 function useTodos() {
     const {
-        item: todos, 
-        saveItem: saveTodos, 
-        loading, 
+        item: todos,
+        saveItem: saveTodos,
+        sincronizeItem: sincronizeTodos,
+        loading,
         error
     } = useLocalStorage('TODOS_V1', []);
     
@@ -23,7 +24,7 @@ function useTodos() {
         searchedTodos = todos.filter(todo => {
             const todoText = todo.text.toLowerCase();
             const searchText = searchValue.toLowerCase();
-        return todoText.includes(searchText);
+            return todoText.includes(searchText);
         });
     }
     
@@ -54,22 +55,21 @@ function useTodos() {
         saveTodos(newTodos);
     };
 
-    return (
-        {
-            loading,
-            error,
-            totalTodos,
-            completedTodos,
-            searchValue,
-            setSearchValue,
-            searchedTodos,
-            addTodo,
-            completeTodo,
-            deleteTodo, 
-            openModal,
-            setOpenModal
-        }
-    );
+    return {
+        loading,
+        error,
+        totalTodos,
+        completedTodos,
+        searchValue,
+        setSearchValue,
+        searchedTodos,
+        addTodo,
+        completeTodo,
+        deleteTodo, 
+        openModal,
+        setOpenModal,
+        sincronizeTodos
+    };
 }
 
 export { useTodos };
