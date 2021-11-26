@@ -2,7 +2,8 @@ import React from "react";
 
 function TodoHeader({ children, loading }) {
     return (
-        <header>
+        <header className = "app-header">
+            <h1 className = "TodoTitle">ToDo App</h1>
             {
                 React.Children
                     .toArray(children)

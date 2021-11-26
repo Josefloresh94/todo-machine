@@ -7,7 +7,7 @@ function CreateTodoButton (props) {
     };
     return (
         <button 
-            className   =   "CreateTodoButton"
+            className   =   {`CreateTodoButton ${props.openModal && "CreateTodoButton__open"}`}
             onClick     =   {onClickButton}
         >
             +

@@ -17,7 +17,7 @@ function TodoForm({ addTodo, setOpenModal }) {
     };
     return (
         <form onSubmit = {onSubmit}>
-            <label>Escribe tu nuevo ToDo</label>
+            {/* <label>Escribe tu nuevo ToDo</label> */}
             <textarea
                 value = {newTodoValue}
                 onChange = {onChange}
@@ -25,15 +25,15 @@ function TodoForm({ addTodo, setOpenModal }) {
             />
             <div className = "TodoForm-buttonContainer">
                 <button
-                    type = "button"
-                    className = "TodoForm-button TodoForm-button--cancel"
-                    onClick = {onCancel}
+                    type        = "button"
+                    className   = "buttonCancel"
+                    onClick     = {onCancel}
                     >
                     Cancelar
                 </button>
                 <button
-                    className = "TodoForm-button TodoForm-button--add"
-                    type = "submit"
+                    className   = "buttonSubmit"
+                    type        = "submit"
                 >
                     Añadir
                 </button>

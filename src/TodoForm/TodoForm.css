@@ -1,71 +1,48 @@
-form {
-    width: 90%;
-    max-width: 300px;
-    background-color: #fff;
-    padding: 33px 40px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-label {
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    color: black;
-    margin-bottom: 26px;
-}
-
 textarea {
-    background-color: #F9FBFC;
-    border: 2px, solid #202329;
-    border-radius: 2px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-    color: #1E1E1F;
-    font-size: 20px;
-    text-align: center;
-    padding: 12px;
-    height: 96px;
-    width: calc(100% - 25px);
-}
-
-textarea::placeholder {
-    color: #a5a5a5;
-    font-family: 'Montserrat';
-    font-weight: 400;
-}
-
-textarea:focus {
-    outline-color: #61DAFA;
-}
-
-.TodoForm-buttonContainer {
-    margin-top: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.TodoForm-button {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 20px;
-    color: #202329;
-    font-weight: 400;
-    width: 120px;
-    height: 48px;
-    border-radius: 2px;
+    background-color: #010f33;
+    margin: 10px auto 0;
+    width: 90%;
+    height: 150px;
     border: none;
-    font-family: 'Montserrat';
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    resize: none;
+    color: #ffffff;
+}
+button {
+    border: none;
+    height: 50px;
+    width: 30%;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+.buttonCancel {
+    background-color: #c0392b;
+}
+.buttonSubmit {
+    background-color: #27ae60;
 }
 
-.TodoForm-button--add {
-    background-color: #61DAFA;
-    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+@media (max-width: 1080px) {
+    textarea {
+        height: 200px;
+    }
+    button {
+        height: 75px;
+        width: 35%;
+    }
 }
-
-.TodoForm-button--cancel {
-    background: transparent;
+@media (max-width: 800px) {
+    textarea {
+        height: 150px;
+    }
+    button {
+        height: 75px;
+        width: 30%;
+    }
 }

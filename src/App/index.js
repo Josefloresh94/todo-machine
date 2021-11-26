@@ -12,6 +12,8 @@ import { TodoForm } from "../TodoForm";
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 import { ChangeAlert } from '../ChangeAlert';
+import { Footer } from "../Footer/index";
+import './App.css'
 
 function App() {
   const { 
@@ -85,6 +87,8 @@ function App() {
         <ChangeAlert 
           sincronize        = {sincronizeTodos}
         />
+
+        <Footer/>
     </React.Fragment>
   );
 }
