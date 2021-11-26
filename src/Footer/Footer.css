@@ -1,0 +1,28 @@
+a {
+    /* text-decoration: none;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 12px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b8b8b8;
+    /* justify-items: center; */
+}
+.icon {
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+.Footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: #172a57;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -3px 8px;
+}
